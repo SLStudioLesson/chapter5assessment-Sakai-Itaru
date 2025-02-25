@@ -144,7 +144,7 @@ public class TaskUI {
                 }
 
                 taskLogic.save(Integer.parseInt(code), name, Integer.parseInt(userCode), loginUser);
-
+                flg = false;
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (AppException e) {
@@ -225,7 +225,7 @@ public class TaskUI {
                 }
                 
                 taskLogic.changeStatus(Integer.parseInt(code), Integer.parseInt(status), loginUser);
-
+                flg = false;
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (AppException e) {
